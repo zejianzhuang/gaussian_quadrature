@@ -3,7 +3,10 @@ The function defined in `GLQ.jl` can be used for calculating a integral with int
 
 the syntax for `gaussian_quadrature` is as follows:
 ```julia
-function gaussian_quadrature!(func::Function; interval::String=missing,  a::Any=NaN, b::Any=NaN, digits::Int=10, return_maxiter::Bool=false)
+function gaussian_quadrature!(func::Function; 
+                                interval::String=missing,  
+                                a::Any=NaN, b::Any=NaN, 
+                                digits::Int=10, return_maxiter::Bool=false)
 ```
 The `interval` must be determined by one of these: `"(0, +inf)"`, `"(-inf, +inf)"` or `"Standard"`.
 
